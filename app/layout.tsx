@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Orbitron, Permanent_Marker } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/Footer";
+import Footer from "@/components/layout/Footer";
 
 /* Fonts */
 const inter = Inter({
