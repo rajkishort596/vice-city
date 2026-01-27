@@ -49,7 +49,7 @@ export function GtaCard({ title, description, image, slug }: Props) {
           {/* Primary CTA */}
           <CardItem translateZ={40}>
             <Link
-              href={`/games/${slug}`}
+              href={`/${slug}`}
               className="
         text-sm font-medium
         text-white
