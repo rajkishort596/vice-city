@@ -53,7 +53,11 @@ export default function Navbar() {
             />
 
             {/* Logo */}
-            <Link href="/" className="relative z-10 group">
+            <Link
+              href="/"
+              className="relative z-10 group"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               <div className="flex items-center gap-2">
                 <span className="font-display text-2xl md:text-3xl font-black italic tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-vice-cyan via-white to-vice-pink drop-shadow-[0_0_10px_rgba(0,255,255,0.5)] group-hover:drop-shadow-[0_0_20px_rgba(255,0,204,0.8)] transition-all duration-300">
                   VICE CITY

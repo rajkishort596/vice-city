@@ -4,7 +4,7 @@ import { GtaCard } from "./GtaCard";
 export default function GtaCardsSection() {
   return (
     <section id="games" className="relative py-32 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl w-full mx-auto">
         {/* Section title */}
         <div className="mb-16 text-center">
           <h2 className="heading-xl text-4xl">

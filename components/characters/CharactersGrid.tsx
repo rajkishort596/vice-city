@@ -35,7 +35,7 @@ import { characters } from "@/lib/data";
 export default function CharactersGrid() {
   return (
     <section className="py-24 bg-black">
-      <div className="w-md md:w-auto md:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
+      <div className="max-w-md md:w-auto md:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
         {characters.map((char) => (
           <CardContainer key={char.slug} className="inter-var">
             <CardBody
