@@ -422,3 +422,60 @@ export const characters = [
     ],
   },
 ];
+
+export const districts = [
+  {
+    title: "Ocean Beach",
+    slug: "ocean-beach",
+    description:
+      "The crown jewel of Vice City. Iconic Art Deco architecture, neon-soaked promenades, and the endless sun-kissed coastline.",
+    image: "/images/ocean_beach.png",
+    vibe: "Neon / Luxury / Beach",
+    color: "from-vice-cyan via-vice-pink to-vice-purple",
+  },
+  {
+    title: "Vice Point",
+    slug: "vice-point",
+    description:
+      "Luxury living and high-end shopping. Home to the North Point Mall and sprawling apartments overlooking the ocean.",
+    image: "/images/vice_point.png",
+    vibe: "Upper Class / Shopping",
+    color: "from-vice-pink via-purple-500 to-vice-cyan",
+  },
+  {
+    title: "Little Havana",
+    slug: "little-havana",
+    description:
+      "The heart of the Cuban community. Vibrant street life, bustling markets, and the smell of coffee and cigars in the air.",
+    image: "/images/little_havana.png",
+    vibe: "Culture / Grit / Busy",
+    color: "from-vice-yellow via-orange-500 to-vice-pink",
+  },
+  {
+    title: "Starfish Island",
+    slug: "starfish-island",
+    description:
+      "An exclusive gated community where the elite enjoy their mansions, pools, and private security. Pure excess.",
+    image: "/images/starfish_island.png",
+    vibe: "Wealth / Power / Mansions",
+    color: "from-green-400 via-vice-cyan to-blue-500",
+  },
+  {
+    title: "Downtown",
+    slug: "downtown",
+    description:
+      "The city's business hub. Skyscrapers pierce the sky, and the Hyman Memorial Stadium hosts the biggest events.",
+    image: "/images/downtown.png",
+    vibe: "Modern / Corporate / Skyscrapers",
+    color: "from-blue-600 via-vice-purple to-vice-pink",
+  },
+  {
+    title: "Little Haiti",
+    slug: "little-haiti",
+    description:
+      "Tough, industrial, and deeply mysterious. The streets tell a different story here, away from the glitz and glamour.",
+    image: "/images/little_haiti.png",
+    vibe: "Industrial / Gritty / Mystical",
+    color: "from-purple-900 via-indigo-950 to-black",
+  },
+];

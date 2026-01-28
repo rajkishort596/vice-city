@@ -154,7 +154,7 @@ export default function StoryPage() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="w-full max-w-[40rem]"
+              className="w-full max-w-160"
             >
               <TextRevealCard
                 text="The city is yours"
@@ -175,7 +175,7 @@ export default function StoryPage() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
-              className="w-full max-w-[40rem]"
+              className="w-full max-w-160"
             >
               <TextRevealCard
                 text="Trust no one"
