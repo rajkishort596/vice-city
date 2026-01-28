@@ -91,31 +91,23 @@ export default function Navbar() {
 
             {/* Right Actions */}
             <div className="hidden md:flex items-center gap-4">
-              {/* <button
-                className="p-2 text-vice-cyan hover:text-white hover:bg-vice-cyan/20 rounded-full transition-all duration-300 group"
-                aria-label="Search"
-              >
-                <Search
-                  size={20}
-                  className="group-hover:scale-110 transition-transform"
-                />
-              </button> */}
-
-              <button
-                className="
-                  relative px-6 py-2 overflow-hidden group
-                  bg-transparent border border-vice-pink/50 text-vice-pink
-                  font-display font-bold uppercase tracking-widest text-xs
-                  hover:border-vice-pink hover:text-white
-                  transition-all duration-300
-                  skew-x-[-10deg] cursor-pointer
-                "
-              >
-                <span className="absolute inset-0 w-full h-full bg-vice-pink/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
-                <span className="relative inline-block skew-x-[10deg]">
-                  Cheat Codes
-                </span>
-              </button>
+              <Link href="/cheatcodes">
+                <button
+                  className="
+                    relative px-6 py-2 overflow-hidden group
+                    bg-transparent border border-vice-pink/50 text-vice-pink
+                    font-display font-bold uppercase tracking-widest text-xs
+                    hover:border-vice-pink hover:text-white
+                    transition-all duration-300
+                    skew-x-[-10deg] cursor-pointer
+                  "
+                >
+                  <span className="absolute inset-0 w-full h-full bg-vice-pink/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
+                  <span className="relative inline-block skew-x-[10deg]">
+                    Cheat Codes
+                  </span>
+                </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -150,9 +142,14 @@ export default function Navbar() {
                     </Link>
                   ))}
                   <div className="h-[1px] bg-white/10 my-2" />
-                  <button className="w-full py-3 bg-vice-pink text-white font-display font-bold uppercase tracking-widest rounded-xl hover:bg-vice-pink/80 transition-colors shadow-[0_0_15px_rgba(255,0,204,0.4)]">
-                    Cheat Codes
-                  </button>
+                  <Link
+                    href="/cheatcodes"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <button className="w-full py-3 bg-vice-pink text-white font-display font-bold uppercase tracking-widest rounded-xl hover:bg-vice-pink/80 transition-colors shadow-[0_0_15px_rgba(255,0,204,0.4)]">
+                      Cheat Codes
+                    </button>
+                  </Link>
                 </div>
               </motion.div>
             )}
