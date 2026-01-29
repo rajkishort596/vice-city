@@ -10,9 +10,20 @@ interface PageProps {
   }>;
 }
 
+export async function generateStaticParams() {
+  return characters.map((char) => ({
+    slug: char.slug,
+  }));
+}
+
 export default async function CharacterPage({ params }: PageProps) {
-  const { slug } = await params;
-  const character = characters.find((char) => char.slug === slug);
+  const resolvedParams = await params;
+  const slug = decodeURIComponent(resolvedParams.slug);
+
+  const character = characters.find(
+    (char) => char.slug.toLowerCase() === slug.toLowerCase(),
+  );
+
   if (!character) return notFound();
 
   return (
@@ -38,7 +49,7 @@ export default async function CharacterPage({ params }: PageProps) {
           {/* LEFT — 3D CHARACTER CARD */}
           <div className="sticky top-24">
             <CardContainer className="inter-var">
-              <CardBody className="bg-gradient-to-br from-black via-gray-900 to-black relative border border-white/20 rounded-2xl p-8 shadow-2xl overflow-hidden">
+              <CardBody className="bg-gradient-to-br from-black via-gray-900 to-black relative border border-white/20 rounded-2xl p-4 md:p-8 shadow-2xl overflow-hidden w-full max-w-[calc(100vw-2rem)] md:max-w-md h-auto">
                 {/* Neon Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-transparent to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 

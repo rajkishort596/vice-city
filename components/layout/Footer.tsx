@@ -27,7 +27,7 @@ export default function Footer() {
     { name: "Story", href: "/story" },
     { name: "City", href: "/city" },
     { name: "Vehicles", href: "/vehicles" },
-    { name: "Music", href: "/music" },
+    // { name: "Music", href: "/music" },
     { name: "Gallery", href: "/gallery" },
   ];
 
