@@ -11,15 +11,28 @@ import {
   Mail,
   Phone,
   Gamepad2,
+  Heart,
 } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Twitter, href: "#", color: "hover:text-vice-cyan" },
-    { icon: Instagram, href: "#", color: "hover:text-vice-pink" },
+    {
+      icon: Twitter,
+      href: "https://x.com/Rajkishort596",
+      color: "hover:text-vice-cyan",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/web.with.raj",
+      color: "hover:text-vice-pink",
+    },
     { icon: Facebook, href: "#", color: "hover:text-blue-500" },
-    { icon: Youtube, href: "#", color: "hover:text-red-500" },
+    {
+      icon: Youtube,
+      href: "https://www.youtube.com/@CodeWithRaj596",
+      color: "hover:text-red-500",
+    },
   ];
 
   const quickLinks = [
@@ -160,7 +173,28 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-mono">
-          <p>© {currentYear} Vice City Reimagined. Fan Art Project.</p>
+          <div className="flex flex-col items-center md:items-start gap-2">
+            <p>© {currentYear} Vice City Reimagined. Fan Art Project.</p>
+            <p className="text-xs flex items-center gap-1.5 group">
+              Made with{" "}
+              <Heart
+                size={14}
+                className="text-vice-pink fill-vice-pink animate-pulse"
+              />{" "}
+              by{" "}
+              <Link
+                href="https://github.com/rajkishort596"
+                target="_blank"
+                className="text-vice-cyan font-bold hover:text-white transition-colors"
+              >
+                Rajkishor Thakur
+              </Link>
+              <span className="text-gray-700 mx-1">|</span>
+              <span className="italic text-gray-500 group-hover:text-vice-yellow transition-colors duration-500">
+                To live in nostalgia
+              </span>
+            </p>
+          </div>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-vice-cyan transition-colors">
               Privacy Policy
