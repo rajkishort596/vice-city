@@ -27,6 +27,10 @@ const permanentMarker = Permanent_Marker({
 export const metadata: Metadata = {
   title: "Vice City",
   description: "A neon-soaked GTA Vice City inspired experience",
+  icons: {
+    icon: "/images/favicon.jpg",
+    apple: "/images/favicon.jpg",
+  },
 };
 
 export default function RootLayout({
