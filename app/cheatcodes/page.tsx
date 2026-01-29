@@ -51,7 +51,7 @@ export default function CheatCodesPage() {
               <Terminal size={14} />
               Terminal Access: Level 5
             </div>
-            <h1 className="text-6xl md:text-8xl font-display font-black tracking-tighter text-white uppercase italic drop-shadow-[0_0_20px_rgba(0,229,255,0.3)]">
+            <h1 className="text-5xl md:text-8xl font-display font-black tracking-tighter text-white uppercase italic drop-shadow-[0_0_20px_rgba(0,229,255,0.3)]">
               CHEAT <span className="text-vice-pink">ARCHIVES</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 font-display tracking-widest max-w-2xl mx-auto uppercase">
@@ -140,7 +140,7 @@ export default function CheatCodesPage() {
                     </div>
 
                     <div className="relative z-10 space-y-4 grow">
-                      <h3 className="text-2xl font-display text-white tracking-widest group-hover:text-vice-cyan transition-colors">
+                      <h3 className="text-md font-display text-white tracking-widest group-hover:text-vice-cyan transition-colors">
                         {cheat.code}
                       </h3>
                       <div className="h-px w-12 bg-vice-pink/50 group-hover:w-full transition-all duration-700" />
